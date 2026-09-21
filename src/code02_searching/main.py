@@ -21,7 +21,7 @@ def main():
     print("\nMovie English:")
     english_movies = collection.find_by_language("en")
 
-    for movie in english_movies:
+    for movie in english_movies[:5]:
         print(movie)
 
     # Film dengan rating tertinggi
